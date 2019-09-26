@@ -1,4 +1,4 @@
-layout(points) in;
+layout(triangles) in;
 layout(triangle_strip, max_vertices = 4) out;
 
 uniform mat4 uv_modelViewProjectionMatrix;

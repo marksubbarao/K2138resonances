@@ -1,10 +1,7 @@
 uniform float uv_fade;
 uniform float uv_alpha;
-uniform vec4 popColor;
-uniform sampler2D viridis;
 
 in vec2 texcoord;
-in float colorFactor;
 
 out vec4 fragColor;
 
@@ -17,7 +14,7 @@ void main(void)
 			discard;
 		}
 
-	fragColor = vec4(1.);
+	fragColor = vec4(1.,1.,0.,1.);
 
 	fragColor.a *=  uv_fade * uv_alpha;
 		
